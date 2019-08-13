@@ -1,0 +1,15 @@
+version: '3'
+services:
+  strapi:
+    build: ./
+    ports:
+      - 1337:1337
+
+  postgres:
+    image: postgres:alpine
+    environment:
+      - POSTGRES_DB=strapi
+      - POSTGRES_USER=strapi_user
+      - POSTGRES_PASSWORD=strapi_pwd
+    volumes:
+      - ./db/:/var/lib/postgresql/data/
