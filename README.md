@@ -7,4 +7,4 @@ $ git clone https://github.com/kraftwerk28/strapi-docker.git
 $ cd strapi-docker
 $ docker-compose up --build
 ```
-Open your browser at http://localhost:1337/admin
+Open your browser at http://&lt;address&gt;:1337/admin
